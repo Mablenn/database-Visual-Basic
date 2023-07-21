@@ -3,7 +3,7 @@ Imports System.Data
 Imports System.Data.SqlClient
 
 '
-' Este ejemplo establece una conexi髇 con un origen
+' Este ejemplo establece una conexi贸n con un origen
 ' de datos SQL Server
 '
 ' Las clases que se van a utilizar son:
@@ -17,21 +17,22 @@ Module Program
     Sub Main(args As String())
 
         Try
-            ' Objeto conexi髇
+            ' Objeto conexi贸n
             Dim conn As SqlConnection = New SqlConnection()
             ' Objeto comando
             Dim cmd As SqlCommand
             ' Objeto lector de datos
             Dim reader As SqlDataReader
-            ' Cadena de conexi髇 para una base de datos SQL Server
+            ' Cadena de conexi贸n para una base de datos SQL Server
+            ' Ojo. En este ejemplo la conexi贸n se establece como equipo local y no como Server Authorization
             conn.ConnectionString = "Data Source =MAB-PORTATIL\SQLEXPRESS;Initial Catalog=ClientDB;Integrated Security=True"
-            ' Abre la conexi髇
+            ' Abre la conexi贸n
             conn.Open()
 
-            ' Comando de lectura de una tabla SQL con la conexi髇 abierta
+            ' Comando de lectura de una tabla SQL con la conexi贸n abierta
             cmd = New SqlCommand("SELECT * FROM dbo.ClienteDatabase", conn)
 
-            ' Obtiene un lector de datos con el m閠odo ExecuteReader()
+            ' Obtiene un lector de datos con el m茅todo ExecuteReader()
             reader = cmd.ExecuteReader()
 
             ' Recorre el objeto DataReader
@@ -41,7 +42,7 @@ Module Program
 
             ' Cierre del objeto DataReader
             reader.Close()
-            ' Cierre de la conexi髇
+            ' Cierre de la conexi贸n
             conn.Close()
 
 
