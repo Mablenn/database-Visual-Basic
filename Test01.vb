@@ -17,7 +17,7 @@ Module Program
             Dim reader As SqlDataReader
             ' Cadena de conexión para una base de datos SQL Server
             ' En este ejemplo la conexión se establece como equipo local y no como Server Authorization
-            conn.ConnectionString = "Data Source =MAB-PORTATIL\SQLEXPRESS;Initial Catalog=ClientDB;Integrated Security=True"
+            conn.ConnectionString = "Data Source=NOMBRE_HOST\SQLEXPRESS;Initial Catalog=ClientDB;Integrated Security=True"
             ' Abre la conexión
             conn.Open()
 
