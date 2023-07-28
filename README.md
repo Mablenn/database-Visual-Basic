@@ -3,7 +3,7 @@
 <p>En ADO .NET la gestión del acceso a datos y las tareas de manipulación de estos se separan en distintos componentes. En el espacio de nombres System.Data se encuentran las clases más comunes para el acceso a datos. Además de estas clases genéricas también ofrece las clases propias para los diferentes proveedores de datos.</p>
 <h3><strong>Clases de acceso a datos:</strong> </h3>
 <ul>
-  <li>Connection</li>
+  <li><p>Connection: Este objeto representa una conexión con una base de datos.</p</li>
   <li>Command</li>
   <li>DataReader</li>
   <li>DataAdapter</li>
