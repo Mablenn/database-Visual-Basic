@@ -6,16 +6,8 @@ Imports System.Data.SqlClient
 ' Este ejemplo establece una conexión con un origen
 ' de datos SQL Server
 '
-' Las clases que se van a utilizar son:
-'
-'   Connection()
-'   Command()
-'   DataReader()
-'   DataAdapter()
-'
 Module Program
     Sub Main(args As String())
-
         Try
             ' Objeto conexión
             Dim conn As SqlConnection = New SqlConnection()
@@ -44,8 +36,7 @@ Module Program
             reader.Close()
             ' Cierre de la conexión
             conn.Close()
-
-
+            
         Catch ex As SqlException
             Console.WriteLine(ex.Message)
         End Try
