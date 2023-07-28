@@ -1,44 +1,19 @@
-Imports System
-Imports System.Data
 Imports System.Data.SqlClient
 
-'
-' Este ejemplo establece una conexión con un origen
-' de datos SQL Server
-'
-Module Program
-    Sub Main(args As String())
+' Este ejemplo establece una conexión con una base de datos SQL Server
+' a través de la clase SqlConnection()
+Module Test01
+    Sub Main()
         Try
-            ' Objeto conexión
-            Dim conn As SqlConnection = New SqlConnection()
-            ' Objeto comando
-            Dim cmd As SqlCommand
-            ' Objeto lector de datos
-            Dim reader As SqlDataReader
-            ' Cadena de conexión para una base de datos SQL Server
-            ' En este ejemplo la conexión se establece como equipo local y no como Server Authorization
-            conn.ConnectionString = "Data Source=NOMBRE_HOST\SQLEXPRESS;Initial Catalog=ClientDB;Integrated Security=True"
-            ' Abre la conexión
-            conn.Open()
-
-            ' Comando de lectura de una tabla SQL con la conexión abierta
-            cmd = New SqlCommand("SELECT * FROM dbo.ClienteDatabase", conn)
-
-            ' Obtiene un lector de datos con el método ExecuteReader()
-            reader = cmd.ExecuteReader()
-
-            ' Recorre el objeto DataReader
-            While reader.Read()
-                Console.WriteLine(reader.GetValue(0).ToString + " " + reader.GetString(1) + " " + reader.GetValue(2).ToString)
-            End While
-
-            ' Cierre del objeto DataReader
-            reader.Close()
-            ' Cierre de la conexión
-            conn.Close()
-            
-        Catch ex As SqlException
-            Console.WriteLine(ex.Message)
+            ' El objeto SqlConnection representa una conexión con 
+            ' una base de datos.
+            Dim connection As SqlConnection = New SqlConnection()
+            connection.ConnectionString = "Data Source=NOMBRE_HOST\SQLEXPRESS;Initial Catalog=ClientDB;Integrated Security=True"
+            ' Abre la conexión con la base de datos
+            connection.Open()
+            Console.WriteLine("Conexión establecida con la base de datos.")
+        Catch ex As Exception
+            Console.WriteLine("Error: " & ex.Message)
         End Try
     End Sub
 End Module
