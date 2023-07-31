@@ -10,7 +10,7 @@
 </ul>
 <h3><strong>Clases de manipulación de datos</strong></h3>
 <ul>
-<li>DataSet</li>
+<li>DataSet: Un objeto DataSet representa un conjunto de datos en memoria obtenidos de un origen de datos.</li>
   <li>DataTable</li>
   <li>DataRow</li>
   <li>DataColumn</li>
