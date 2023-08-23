@@ -1,0 +1,12 @@
+C:\Users\mablen\source\repos\TestDatabase\TestDatabase\bin\Debug\TestDatabase.exe.config
+C:\Users\mablen\source\repos\TestDatabase\TestDatabase\bin\Debug\TestDatabase.exe
+C:\Users\mablen\source\repos\TestDatabase\TestDatabase\bin\Debug\TestDatabase.pdb
+C:\Users\mablen\source\repos\TestDatabase\TestDatabase\bin\Debug\TestDatabase.xml
+C:\Users\mablen\source\repos\TestDatabase\TestDatabase\obj\Debug\TestDatabase.vbproj.AssemblyReference.cache
+C:\Users\mablen\source\repos\TestDatabase\TestDatabase\obj\Debug\TestDatabase.vbproj.SuggestedBindingRedirects.cache
+C:\Users\mablen\source\repos\TestDatabase\TestDatabase\obj\Debug\TestDatabase.Resources.resources
+C:\Users\mablen\source\repos\TestDatabase\TestDatabase\obj\Debug\TestDatabase.vbproj.GenerateResource.cache
+C:\Users\mablen\source\repos\TestDatabase\TestDatabase\obj\Debug\TestDatabase.vbproj.CoreCompileInputs.cache
+C:\Users\mablen\source\repos\TestDatabase\TestDatabase\obj\Debug\TestDatabase.exe
+C:\Users\mablen\source\repos\TestDatabase\TestDatabase\obj\Debug\TestDatabase.xml
+C:\Users\mablen\source\repos\TestDatabase\TestDatabase\obj\Debug\TestDatabase.pdb
