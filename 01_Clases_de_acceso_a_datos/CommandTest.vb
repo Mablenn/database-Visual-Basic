@@ -8,9 +8,7 @@ Module CommandTest
   Sub Main()
     Try
       ' El objeto SqlConnection representa una conexión con un origen de datos 
-      Dim connection As SqlConnection = New SqlConnection()
-      ' Un modo más eficiente sería asignar la cadena de conexión en el momento de crear la instancia
-      Dim connection As SqlConnection = New SqlConnection("Data Source=MAB-PORTATIL\SQLEXPRESS;Initial Catalog=TestDB;Integrated Security=True")
+      Dim connection As New SqlConnection("Data Source=MAB-PORTATIL\SQLEXPRESS;Initial Catalog=TestDB;Integrated Security=True")
       
       ' Abre la conexión
       connection.Open()
@@ -20,7 +18,8 @@ Module CommandTest
       ' ya podemos ejecutar sentencias con un objeto SqlCommand()
       ' A este objeto se le pasa como parámetros una cadena con la sentencia SQL y el objeto conexión
       Dim sqlcmd As new SqlCommand("SELECT * FROM PROVEEDORES", connection)
-
+      Console.WriteLine("Se ha ejecutado la sentencia SELECT.")
+      
       ' Cierre de la conexión
       connection.Close()
     Catch ex As Exception
