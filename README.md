@@ -5,7 +5,7 @@
 <ul>
   <li><strong><a href="https://github.com/Mablenn/database-Visual-Basic/blob/main/01_Clases_de_acceso_a_datos/ConnectionTest.vb">Connection:</a></strong> Este objeto representa una conexión con una base de datos.</li>
   <li><strong><a href="https://github.com/Mablenn/database-Visual-Basic/blob/main/01_Clases_de_acceso_a_datos/CommandTest.vb">Command:</a></strong> Un objeto Command representa una sentencia SQL o un procedimiento almacenado.</li>
-  <li><strong>DataReader:</strong> A través de este objeto se pueden realizar tareas de sólo lectura sobre los datos.</li>
+  <li><strong><a href="https://github.com/Mablenn/database-Visual-Basic/blob/main/01_Clases_de_acceso_a_datos/DataReaderTest.vb">DataReader</a>:</strong> A través de este objeto se pueden realizar tareas de sólo lectura sobre los datos.</li>
   <li><strong>DataAdapter:</strong> Representa un conjunto de comandos SQL y una conexión a la base de datos que se utilizan para rellenar un objeto DataSet y actualizar el origen de los datos.</li>
 </ul>
 <h3><strong>Clases de manipulación de datos</strong></h3>
