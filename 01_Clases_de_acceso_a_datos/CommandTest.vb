@@ -1,8 +1,7 @@
-
-Imports System.Data.SqlClient
-
 ' La clase Command() ejecuta sentencias SQL. El proveedor de bases de datos SQL
 ' tiene su propia clase Command() llamada SqlCommand()
+
+Imports System.Data.SqlClient
 
 Module CommandTest
   Sub Main()
