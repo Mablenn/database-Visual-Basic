@@ -1,8 +1,7 @@
-
-Imports System.Data.SqlClient
-
 ' Establece una conexión con una base de datos. Dependiendo del proveedor de la base de datos
 ' esta clase puede tener un nombre distinto. Para SQL Server la clase se denomina SqlConnection()
+
+Imports System.Data.SqlClient
 
 Module ConnectionTest
   Sub Main()
