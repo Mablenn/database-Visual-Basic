@@ -1,4 +1,4 @@
-' Un objeto DataAdapter actúa como puente entre un conjunto de datos en memoria, objeto DataSet,
+' Un objeto DataAdapter actúa como puente entre un conjunto de datos, por ejemplo, un objeto DataSet,
 ' y un origen de datos, por ejemplo, una base de datos.
 ' Proporciona métodos para recuperar y modificar datos en el objeto DatSet mientras mantiene la
 ' sincronización entre los datos y el origen de estos.
