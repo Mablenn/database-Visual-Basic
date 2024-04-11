@@ -5,7 +5,7 @@
 
 Imports System.Data.SqlClient
 
-Module Test02
+Module DataAdapterTest
     Sub Main()
         Dim cadenaConn As String = "Data Source=MAB-PORTATIL\SQLEXPRESS;Initial Catalog=TestDB;Integrated Security=True"
         Dim command As String = "SELECT * FROM Proveedores"
