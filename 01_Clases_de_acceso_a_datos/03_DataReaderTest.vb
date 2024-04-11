@@ -8,7 +8,7 @@ Module DataReaderTest
         Try
             ' 1 - Establece conexión con la base de datos.
             ' El objeto SqlConnection representa una conexión con un origen de datos 
-            Dim connection As New SqlConnection("Data Source=MAB-PORTATIL\SQLEXPRESS;Initial Catalog=GastosDB;Integrated Security=True")
+            Dim connection As New SqlConnection("Data Source=MAB-PORTATIL\SQLEXPRESS;Initial Catalog=TestDB;Integrated Security=True")
             ' Abre la conexión
             connection.Open()
             Console.WriteLine("Conexión establecida con la base de datos.")
